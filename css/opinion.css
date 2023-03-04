@@ -1,0 +1,56 @@
+.opinion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-p1);
+  overflow: hidden;
+}
+
+.opinion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.opinionContent {
+  padding: 40px 40px 80px 80px;
+  align-self: end;
+}
+.opinionContent p {
+  max-width: 32ch;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.opinion p::before {
+  content: "“";
+  font-size: 5rem;
+  color: var(--cor-p2);
+  position: absolute;
+  left: -50px;
+  top: -20px;
+}
+
+.opinion p::after {
+  content: "”";
+  font-size: 5rem;
+  color: var(--cor-p2);
+  position: absolute;
+}
+
+@media (max-width: 800px) {
+  .opinion {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .opinion img{
+    max-height: 200px;
+  }
+  .opinionContent {
+    padding: 40px 20px;
+    justify-self: center;
+  }
+}

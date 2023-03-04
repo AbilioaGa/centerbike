@@ -1,0 +1,69 @@
+.font1XS {
+  font: 600 0.75rem/1.35 "Poppins", sans-serif;
+}
+
+.font2XS {
+  font: 400 0.875rem/1.43 "Roboto", sans-serif;
+}
+
+.font2S {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+.font1S {
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+
+.font2M {
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+}
+
+.font1MB {
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.font1M {
+  font: 400 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.font2LB {
+  font: 500 1.5rem/1.5 "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+}
+
+.font2L {
+  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+.font1L {
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+}
+
+.font1XL {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+
+.font1XXL {
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .font1XXL {
+    font-size: 3rem;
+  }
+  .font2L,
+  .font2LB {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .font1XXL {
+    font-size: 2rem;
+  }
+  .font1XL,
+  .font2XL {
+    font-size: 1.5rem;
+  }
+}
