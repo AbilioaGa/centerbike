@@ -1,0 +1,127 @@
+.bikes-bg {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+}
+
+.bikes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* preço da bicicleta usando position absolute */
+.bikesImage {
+  position: relative;
+}
+
+.bikesImage img {
+  border-radius: 4px;
+}
+
+.bikesImage span {
+  display: inline-block;
+  background: var(--cor-11);
+  padding: 8px 16px 8px 16px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  border-radius: 4px 0 0 4px;
+}
+/* preço da bicicleta usando position absolute */
+
+/* preço da bicicleta usando grid 
+.bikesImage {
+  display: grid;
+}
+
+.bikesImage img {
+  grid-area: 1/1;
+}
+
+.bikesImage span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  display: inline-block;
+  background: var(--cor-11);
+  padding: 8px 16px 8px 16px;
+  border-radius: 4px 0 0 4px;
+}
+ */
+
+.bikesContent {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: center;
+}
+
+.bikes h2,
+.bikes p {
+  grid-column: 1/-1;
+}
+
+.bikes h2 {
+  margin-bottom: 20px;
+}
+
+.bikes h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
+}
+
+.bikes p {
+  margin-bottom: 32px;
+}
+
+.bikes a {
+  place-self: end;
+}
+
+.bikes li {
+  display: flex;
+  align-items: center;
+}
+/* .bikes ul {
+  display: grid;
+  gap: 16px
+} */
+
+.bikes li + li {
+  margin-top: 16px;
+}
+
+.bikesContent img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+  .bikes-bg {
+    background: var(--cor-11);
+  }
+  .bikes {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bikesContent {
+    grid-template-columns: 1fr;
+  }
+  .bikes ul {
+    font-size: 1rem;
+    margin-bottom: 32px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .bikes a {
+    place-self: start;
+  }
+}

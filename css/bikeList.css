@@ -17,6 +17,10 @@
   overflow-x: auto;
 }
 
+#bike .bikeList ul {
+  padding: 0px 0px 20px 0px;
+}
+
 .bikeList li {
   flex: 1;
   min-width: 280px;
@@ -28,6 +32,7 @@
 
 .bikeList img {
   margin-bottom: 16px;
+  border-radius: 4px;
 }
 
 .bikeList h3 {
