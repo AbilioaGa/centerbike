@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Termos e Condições - Center Bike - Bicicletaria do Tarzan</title>
+  <title>Contato - Center Bike - Bicicletaria do Tarzan</title>
   <meta name="description" content="Termos e Condições">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
     rel="stylesheet">
 </head>
 
-<body id="terms">
+<body id="contact">
   <header class="header-bg">
     <div class="header container">
       <a href="./"><img src="./img/logocb.svg" alt="Center Bike"></a>
@@ -24,7 +24,7 @@
         <ul class="header-menu cor0">
           <li><a href="./bikes.html">Bicicletas</a></li>
           <li><a href="./safe.html">Seguros</a></li>
-          <li><a href="./contact.html">Contato</a></li>
+          <li><a href=".contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -32,22 +32,58 @@
   <main>
     <div class="title-bg">
       <div class="title container">
-        <p class="font2LB cor5">Termos de uso</p>
-        <h1 class="font1XXL cor0">Termos e condições<span class="corp1">.</span></h1>
+        <p class="font2LB cor5">Respostas em até 24h</p>
+        <h1 class="font1XXL cor0">nosso contato<span class="corp1">.</span></h1>
       </div>
     </div>
-    <div class="terms font2S cor10 container">
-      <h2 class="font1L corr11">1. Política de Estono</h2>
-      <p>1.1 Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à
-        vista
-        também aceitarmos PIX e Boleto através do PagSeguro.
-      </p>
-      <h2 class="font1L corr11">2. Conta do Usuário</h2>
-      <p>2.1</p>
-      <h2 class="font1L corr11">3. Seguro Center Bike</h2>
-      <p>3.1</p>
+
+    <div class="contact container">
+      <section class="contactData" aria-label="Endereço">
+        <h2 class="font1M cor0">Loja Online</h2>
+        <div class="contactAddress font2S cor4">
+          <p>Rua 9 de Julio, Centro</p>
+          <p>Itaí - SP</p>
+          <p>Brasil</p>
+        </div>
+        <address class="contacts">
+          <a href="mailto:contato@centerbike.com">contato@centerbike.com</a>
+          <a href="mailto:assistencia@centerbike.com">assistencia@centerbike.com</a>
+          <a href="tel:+5514999999999">+55 (14) 99999-9999</a>
+        </address>
+        <div class="socialMedia">
+          <a href="https://www.facebook.com/profile.php?id=100012664872221">
+            <img src="./img/redes/facebook-p.svg" alt="Facebook">
+          </a>
+          <a href="./">
+            <img src="./img/redes/instagram-p.svg" alt="Instagram">
+          </a>
+        </div>
+      </section>
+      <section class="contactForm" aria-label="Formulário">
+        <form class="form" action="./contact.html">
+          <div>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome">
+          </div>
+          <div>
+            <label for="fone">Telefone</label>
+            <input type="text" id="fone" name="fone" placeholder="(99) 99999-9999">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Seu email">
+          </div>
+          <div>
+            <label for="message">Mensagem</label>
+            <textarea rows="5" id="message" name="message" placeholder="O que você precisa?"></textarea>
+          </div>
+          <button class="button">Enviar Mensagem</button>
+        </form>
+      </section>
     </div>
+
   </main>
+
   <footer class="footer-bg">
     <div class="footer container">
       <img src="./img/logocb.svg" alt="Center Bike">
