@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento - Center Bike - Bicicletaria do Tarzan</title>
+  <meta name="description" content="Orçamentos">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="budget">
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./"><img src="./img/logocb.svg" alt="Center Bike"></a>
+
+      <nav aria-label="primary">
+        <ul class="header-menu cor0">
+          <li><a href="./bikes.html">Bicicletas</a></li>
+          <li><a href="./safe.html">Seguros</a></li>
+          <li><a href="./contact.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="title-bg">
+      <div class="title container">
+        <p class="font2LB cor5">Cotações no seu email</p>
+        <h1 class="font1XXL cor0">solicite um orçamento<span class="corp1">.</span></h1>
+      </div>
+    </div>
+
+    <form class="budget container" action="./">
+      <div class="budgetProduct">
+        <h2 class="font1XS cor5">Center Bike ou Seguro?</h2>
+
+        <input type="radio" name="type" value="centerBike" id="centerBike">
+        <label for="centerBike">Center Bike</label>
+
+        <input type="radio" name="type" value="safe" id="safe">
+        <label for="safe">Seguro</label>
+
+        <div class="budgetContent" id="budgetCenterBike">
+          <h2 class="font1XS cor5">Escolha a sua bicicleta</h2>
+
+          <input type="radio" name="product" value="bicicleta1" id="bicicleta1">
+          <label for="bicicleta1">Bicicleta 1 <span>R$ 2499</span></label>
+          <div class="budgetDetails">
+            <ul class="font1XS cor8">
+              <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" alt="">Alta Performance</li>
+              <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
+            </ul>
+            <img src="./img/bicicletas/bicicleta1.jpg" alt="Bicicleta 1">
+          </div>
+
+          <input type="radio" name="product" value="bicicleta2" id="bicicleta2">
+          <label for="bicicleta2">Bicicleta 2 <span>R$ 2499</span></label>
+          <div class="budgetDetails">
+            <ul class="font1XS cor8">
+              <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" alt="">Alta Performance</li>
+              <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
+            </ul>
+            <img src="./img/bicicletas/bicicleta2.jpg" alt="Bicicleta 2">
+          </div>
+
+          <input type="radio" name="product" value="bicicleta3" id="bicicleta3">
+          <label for="bicicleta3">Bicicleta 3 <span>R$ 2499</span></label>
+          <div class="budgetDetails">
+            <ul class="font1XS cor8">
+              <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" alt="">Alta Performance</li>
+              <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
+            </ul>
+            <img src="./img/bicicletas/bicicleta3.jpg" alt="Bicicleta 3">
+          </div>
+
+        </div>
+
+        <div class="budgetContent" id="budgetSafe">
+          <h2 class="font1XS cor5">Escolha o plano</h2>
+
+          <input type="radio" name="product" value="prata" id="prata">
+          <label for="prata">Prata <span>R$ 199</span></label>
+
+          <input type="radio" name="product" value="ouro" id="ouro">
+          <label for="ouro">Ouro <span>R$ 299</span></label>
+        </div>
+      </div>
+
+      <div class="budgetData form">
+        <h2 class="font1XS cor9 col2">dados pessoais</h2>
+        <div>
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div>
+          <label for="surname">Sobrenome</label>
+          <input type="text" id="surname" name="surname">
+        </div>
+        <div class="col2">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+        </div>
+        <div class="col2">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <h2 class="font1XS cor9 col2">entrega</h2>
+        <div>
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep">
+        </div>
+        <div class="col2">
+          <label for="logradouro">Logradouro</label>
+          <input type="text" id="logradouro" name="logradouro">
+        </div>
+        <div>
+          <label for="numero">Número</label>
+          <input type="text" id="numero" name="numero">
+        </div>
+        <div>
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro">
+        </div>
+        <div>
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade">
+        </div>
+        <div>
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" name="estado">
+        </div>
+        <button class="button col2">Solicitar Orçamento</button>
+      </div>
+
+    </form>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img src="./img/logocb.svg" alt="Center Bike">
+      <div class="footerContact">
+        <h3 class="font2LB cor0">Contato</h3>
+        <ul class="font2M cor5">
+          <li><a href="tel:+5514999999999">+55 (14) 99999-9999</a></li>
+          <li><a href="mailto:contato@centerbike.com">contato@centerbike.com</a></li>
+          <li>Rua 9 de Julio, Centro</li>
+          <li>Itaí - SP</li>
+        </ul>
+        <div class="footerSocial">
+          <a href="https://www.facebook.com/profile.php?id=100012664872221">
+            <img src="./img/redes/facebook.svg" alt="Facebook">
+          </a>
+          <a href="./">
+            <img src="./img/redes/instagram.svg" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      <div class="footerInfo">
+        <h3 class="font2LB cor0">Informações</h3>
+        <nav>
+          <ul class="font1M cor5">
+            <li><a href="./bikes.html">Bicicletas</a></li>
+            <li><a href="./safe.html">Seguros</a></li>
+            <li><a href="./contact.html">Contato</a></li>
+            <li><a href="./terms.html">Termos e Conddições</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footerCopy font2M cor6">Center Bike © Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -8,6 +8,7 @@
   <title>Center Bike - Bicicletaria do Tarzan</title>
   <meta name="description"
     content="Nossas bicicletas são todas montadas com peças de qualidade e já saem revisadas e prontas para uso. Venha logo garantir a sua!!">
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,7 @@
 <body>
   <header class="header-bg">
     <div class="header container">
-      <a href="./"><img src="./img/logocb.svg" alt="Center Bike"></a>
+      <a href="./"><img src="./img/logocb.svg" width="125" height="75" alt="Center Bike"></a>
 
       <nav aria-label="primary">
         <ul class="header-menu cor0">
@@ -41,9 +42,10 @@
         </p>
         <a class="button" href="./bikes.html">Selecione a sua</a>
       </div>
-      <div>
-        <img src="./img/fotos/introducao1.gif" alt="GIF bicicleta com varias cores">
-      </div>
+      <picture>
+        <source media="(max-width: 800px)" srcset="./img/fotos/introducao1.gif">
+        <img src="./img/fotos/introducao1.gif" width="480" height="270" alt="GIF bicicleta com varias cores">
+      </picture>
     </div>
   </main>
   <article class="bikeList">
@@ -51,119 +53,119 @@
     <ul>
       <li>
         <a href="./bikes/bike1.html">
-          <img src="./img/bicicletas/bicicleta1.1.jpg" alt="Bicicleta 1">
+          <img src="./img/bicicletas/bicicleta1.1.jpg" width="920" height="1040" alt="Bicicleta 1">
           <h3 class="font1XL">Bicicleta 1</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike2.html">
-          <img src="./img/bicicletas/bicicleta2.1.jpg" alt="Bicicleta 2">
+          <img src="./img/bicicletas/bicicleta2.1.jpg" width="920" height="1040" alt="Bicicleta 2">
           <h3 class="font1XL">Bicicleta 2</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike3.html">
-          <img src="./img/bicicletas/bicicleta3.1.jpg" alt="Bicicleta 3">
+          <img src="./img/bicicletas/bicicleta3.1.jpg" width="920" height="1040" alt="Bicicleta 3">
           <h3 class="font1XL">Bicicleta 3</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike4.html">
-          <img src="./img/bicicletas/bicicleta4.1.jpg" alt="Bicicleta 4">
+          <img src="./img/bicicletas/bicicleta4.1.jpg" width="920" height="1040" alt="Bicicleta 4">
           <h3 class="font1XL">Bicicleta 4</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike5.html">
-          <img src="./img/bicicletas/bicicleta5.1.jpg" alt="Bicicleta 5">
+          <img src="./img/bicicletas/bicicleta5.1.jpg" width="920" height="1040" alt="Bicicleta 5">
           <h3 class="font1XL">Bicicleta 5</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike6.html">
-          <img src="./img/bicicletas/bicicleta6.1.jpg" alt="Bicicleta 6">
+          <img src="./img/bicicletas/bicicleta6.1.jpg" width="920" height="1040" alt="Bicicleta 6">
           <h3 class="font1XL">Bicicleta 6</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike7.html">
-          <img src="./img/bicicletas/bicicleta7.1.jpg" alt="Bicicleta 7">
+          <img src="./img/bicicletas/bicicleta7.1.jpg" width="920" height="1040" alt="Bicicleta 7">
           <h3 class="font1XL">Bicicleta 7</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike8.html">
-          <img src="./img/bicicletas/bicicleta8.1.jpg" alt="Bicicleta 8">
+          <img src="./img/bicicletas/bicicleta8.1.jpg" width="920" height="1040" alt="Bicicleta 8">
           <h3 class="font1XL">Bicicleta 8</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike9.html">
-          <img src="./img/bicicletas/bicicleta9.1.jpg" alt="Bicicleta 9">
+          <img src="./img/bicicletas/bicicleta9.1.jpg" width="920" height="1040" alt="Bicicleta 9">
           <h3 class="font1XL">Bicicleta 9</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike10.html">
-          <img src="./img/bicicletas/bicicleta10.1.jpg" alt="Bicicleta 10">
+          <img src="./img/bicicletas/bicicleta10.1.jpg" width="920" height="1040" alt="Bicicleta 10">
           <h3 class="font1XL">Bicicleta 10</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike11.html">
-          <img src="./img/bicicletas/bicicleta11.1.jpg" alt="Bicicleta 11">
+          <img src="./img/bicicletas/bicicleta11.1.jpg" width="920" height="1040" alt="Bicicleta 11">
           <h3 class="font1XL">Bicicleta 11</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike12.html">
-          <img src="./img/bicicletas/bicicleta12.1.jpg" alt="Bicicleta 12">
+          <img src="./img/bicicletas/bicicleta12.1.jpg" width="920" height="1040" alt="Bicicleta 12">
           <h3 class="font1XL">Bicicleta 12</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike13.html">
-          <img src="./img/bicicletas/bicicleta13.1.jpg" alt="Bicicleta 13">
+          <img src="./img/bicicletas/bicicleta13.1.jpg" width="920" height="1040" alt="Bicicleta 13">
           <h3 class="font1XL">Bicicleta 13</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike14.html">
-          <img src="./img/bicicletas/bicicleta14.1.jpg" alt="Bicicleta 14">
+          <img src="./img/bicicletas/bicicleta14.1.jpg" width="920" height="1040" alt="Bicicleta 14">
           <h3 class="font1XL">Bicicleta 14</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike15.html">
-          <img src="./img/bicicletas/bicicleta15.1.jpg" alt="Bicicleta 15">
+          <img src="./img/bicicletas/bicicleta15.1.jpg" width="920" height="1040" alt="Bicicleta 15">
           <h3 class="font1XL">Bicicleta 15</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike16.html">
-          <img src="./img/bicicletas/bicicleta16.1.jpg" alt="Bicicleta 16">
+          <img src="./img/bicicletas/bicicleta16.1.jpg" width="920" height="1040" alt="Bicicleta 16">
           <h3 class="font1XL">Bicicleta 16</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
       </li>
       <li>
         <a href="./bikes/bike17.html">
-          <img src="./img/bicicletas/bicicleta17.1.jpg" alt="Bicicleta 17">
+          <img src="./img/bicicletas/bicicleta17.1.jpg" width="920" height="1040" alt="Bicicleta 17">
           <h3 class="font1XL">Bicicleta 17</h3>
           <span class="font2M cor8">R$ 2499</span>
         </a>
@@ -184,7 +186,7 @@
         <a class="link" href="./bikes.html">Escolha um modelo</a>
         <div class="technologyAdvantages">
           <div>
-            <img src="./img/icones/eletrica.svg" alt="">
+            <img src="./img/icones/eletrica.svg" width="24" height="24" alt="">
             <h3 class="font1M cor0">Motor Elétrico</h3>
             <p class="font2S cor5">Toda bicicleta pode ser equipada com um motor elétrico que possui duração de até
               120h.
@@ -192,7 +194,7 @@
               gasta ao pedalar.</p>
           </div>
           <div>
-            <img src="./img/icones/rastreador.svg" alt="">
+            <img src="./img/icones/rastreador.svg" width="24" height="24" alt="">
             <h3 class="font1M cor0">Rastreador</h3>
             <p class="font2S cor5">Sabemos o quão preciosa é a sua bicicleta, por isso adicionamos rastreadores e
               sistemas
@@ -202,7 +204,7 @@
         </div>
       </div>
       <div class="technologyImage">
-        <img src="./img/fotos/tecnologia.jpg" alt="">
+        <img src="./img/fotos/tecnologia.jpg" width="1400" height="2240" alt="">
       </div>
     </div>
   </article>
@@ -211,34 +213,34 @@
     <h2 class="container font1XXL">nossos parceiros<span class="corp1">.</span></h2>
     <ul>
       <li>
-        <img src="./img/parceiros/trek.svg" alt="Trek">
+        <img src="./img/parceiros/trek.svg" width="212" height="25" alt="Trek">
       </li>
       <li>
-        <img src="./img/parceiros/caloi.svg" alt="Caloi">
+        <img src="./img/parceiros/caloi.svg" width="2500" height="700" alt="Caloi">
       </li>
       <li>
-        <img src="./img/parceiros/cannondale.svg" alt="Cannondale">
+        <img src="./img/parceiros/cannondale.svg" width="2500" height="700" alt="Cannondale">
       </li>
       <li>
-        <img src="./img/parceiros/cervelo.svg" alt="Cervelo">
+        <img src="./img/parceiros/cervelo.svg" width="2500" height="700" alt="Cervelo">
       </li>
       <li>
-        <img src="./img/parceiros/giant.svg" alt="Giant">
+        <img src="./img/parceiros/giant.svg" width="440" height="59" alt="Giant">
       </li>
       <li>
-        <img src="./img/parceiros/sram.svg" alt="Sram">
+        <img src="./img/parceiros/sram.svg" width="2500" height="700" alt="Sram">
       </li>
       <li>
-        <img src="./img/parceiros/pinarello.svg" alt="Pinarello">
+        <img src="./img/parceiros/pinarello.svg" width="376" height="32" alt="Pinarello">
       </li>
       <li>
-        <img src="./img/parceiros/shimano.svg" alt="Shimano">
+        <img src="./img/parceiros/shimano.svg" width="2500" height="700" alt="Shimano">
       </li>
     </ul>
   </section>
   <section class="opinion" aria-label="Opinião">
     <div>
-      <img src="./img/fotos/depoimento.jpg" alt="Pessoa pedalando ima bicicleta">
+      <img src="./img/fotos/depoimento.jpg" width="1560" height="1360" alt="Pessoa pedalando uma bicicleta">
     </div>
     <div class="opinionContent">
       <blockquote class="font1XL corp5">
@@ -269,7 +271,7 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a class="button Sec" href="./orcamento.html">inscreva-se</a>
+        <a class="button Sec" href="./budget.html">inscreva-se</a>
       </div>
 
       <div class="safeItem">
@@ -286,13 +288,13 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao clube Center Bike</li>
         </ul>
-        <a class="button" href="./orcamento.html">inscreva-se</a>
+        <a class="button" href="./budget.html">inscreva-se</a>
       </div>
     </div>
   </article>
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/logocb.svg" alt="Center Bike">
+      <img src="./img/logocb.svg" width="125" height="75" alt="Center Bike">
       <div class="footerContact">
         <h3 class="font2LB cor0">Contato</h3>
         <ul class="font2M cor5">
@@ -303,10 +305,10 @@
         </ul>
         <div class="footerSocial">
           <a href="https://www.facebook.com/profile.php?id=100012664872221">
-            <img src="./img/redes/facebook.svg" alt="Facebook">
+            <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
           </a>
           <a href="./">
-            <img src="./img/redes/instagram.svg" alt="Instagram">
+            <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
           </a>
         </div>
       </div>
@@ -314,10 +316,10 @@
         <h3 class="font2LB cor0">Informações</h3>
         <nav>
           <ul class="font1M cor5">
-            <li><a href="./bicicletas.html">Bicicletas</a></li>
-            <li><a href="./seguros.html">Seguros</a></li>
-            <li><a href="./contato.html">Contato</a></li>
-            <li><a href="./termos.html">Termos e Conddições</a></li>
+            <li><a href="./bikes.html">Bicicletas</a></li>
+            <li><a href="./safe.html">Seguros</a></li>
+            <li><a href="./contact.html">Contato</a></li>
+            <li><a href="./terms.html">Termos e Conddições</a></li>
           </ul>
         </nav>
       </div>
