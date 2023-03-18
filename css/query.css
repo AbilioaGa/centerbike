@@ -16,15 +16,19 @@ padding-bottom: 120px;
   background-color: var(--cor-1);
 }
 
-.query dt {
+.query button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
 }
 
-.query dt::before {
+.query button::before {
   content: "";
   display: inline-block;
   width: 12px;
@@ -32,12 +36,25 @@ padding-bottom: 120px;
   background-color: var(--cor-p1);
 }
 
-.query dt::after {
+.query button::after {
   content: "";
   display: inline-block;
   width: 14px;
   height: 6px;
   background: url('../img/icones/seta-abrir.svg');
+}
+
+.query button:hover::after,
+.query button[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+
+.js .query dd {
+  display: none;
+}
+
+.js .query dd.ativa {
+  display: block;
 }
 
 .query dd {

@@ -14,6 +14,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap"
     rel="stylesheet">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body id="safe">
@@ -41,7 +42,7 @@
 
     <div class="safe container">
 
-      <div class="safeItem">
+      <div class="safeItem fadeInLeft" data-anime="200">
         <h3 class="font1XL cor6">PRATA</h3>
         <span class="font1XL cor0">
           R$ 199
@@ -53,10 +54,10 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a class="button Sec" href="./budget.html">inscreva-se</a>
+        <a class="button Sec" href="./budget.html?type=safe&product=prata">inscreva-se</a>
       </div>
 
-      <div class="safeItem">
+      <div class="safeItem fadeInRight" data-anime="400">
         <h3 class="font1XL corp1">OURO</h3>
         <span class="font1XL cor0">
           R$ 299
@@ -70,7 +71,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao clube Center Bike</li>
         </ul>
-        <a class="button" href="./budget.html">inscreva-se</a>
+        <a class="button" href="./budget.html?type=safe&product=ouro">inscreva-se</a>
       </div>
     </div>
   </main>
@@ -124,60 +125,74 @@
     <h2 class="font1XXL">perguntas frequentes<span class="corp1">.</span></h2>
     <dl>
       <div>
-        <dt class="font1MB">
-          Qual forma de pagamento vocês aceitam?
+        <dt>
+          <button class="font1MB" aria-controls="query1" aria-expanded="true">
+            Qual forma de pagamento vocês aceitam?
+          </button>
         </dt>
-        <dd class="font2S cor9">
+        <dd id="query1" class="font2S cor9 ativa">
           Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à
           vista também
           aceitarmos PIX e Boleto através do PagSeguro.
         </dd>
       </div>
       <div>
-        <dt class="font1MB">
-          Como posso entrar em contato?
+        <dt>
+          <button class="font1MB" aria-controls="query2" aria-expanded="false">
+            Como posso entrar em contato?
+          </button>
         </dt>
-        <dd class="font2S cor9">
-          text 2
+        <dd id="query2" class="font2S cor9">
+          Para um melhor atendimento, a Central de Atendimento da Center Bike é 100% informatizada e personalizada.
         </dd>
       </div>
       <div>
-        <dt class="font1MB">
-          Vocês possuem algum desconto?
+        <dt>
+          <button class="font1MB" aria-controls="query3" aria-expanded="false">
+            Vocês possuem algum desconto?
+          </button>
         </dt>
-        <dd class="font2S cor9">
+        <dd id="query3" class="font2S cor9">
           text 3
         </dd>
       </div>
       <div>
-        <dt class="font1MB">
-          Qual a garantia que possuo?
+        <dt>
+          <button class="font1MB" aria-controls="query4" aria-expanded="false">
+            Qual a garantia que possuo?
+          </button>
         </dt>
-        <dd class="font2S cor9">
+        <dd id="query4" class="font2S cor9">
           text 4
         </dd>
       </div>
       <div>
-        <dt class="font1MB">
-          Posso parcelar no boleto?
+        <dt>
+          <button class="font1MB" aria-controls="query5" aria-expanded="false">
+            Posso parcelar no boleto?
+          </button>
         </dt>
-        <dd class="font2S cor9">
+        <dd id="query5" class="font2S cor9">
           text 5
         </dd>
       </div>
       <div>
-        <dt class="font1MB">
-          Quantas trocas posso fazer ao ano?
+        <dt>
+          <button class="font1MB" aria-controls="query6" aria-expanded="false">
+            Quantas trocas posso fazer ao ano?
+          </button>
         </dt>
-        <dd class="font2S cor9">
+        <dd id="query6" class="font2S cor9">
           text 6
         </dd>
       </div>
       <div>
-        <dt class="font1MB">
-          Qual bicicleta devo escolher para o meu tamanho?
+        <dt>
+          <button class="font1MB" aria-controls="query7" aria-expanded="false">
+            Qual bicicleta devo escolher para o meu tamanho?
+          </button>
         </dt>
-        <dd class="font2S cor9">
+        <dd id="query7" class="font2S cor9">
           text 7
         </dd>
       </div>
@@ -221,7 +236,8 @@
   </footer>
 
 
-
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -15,6 +15,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap"
     rel="stylesheet">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
@@ -35,14 +36,15 @@
   <main class="introduction-bg">
     <div class="introduction container">
       <div class="introductionContent">
-        <h1 class="font1XXL font1M cor0">Bicicletas feitas sob medida<span class="corp1">.</span></h1>
-        <p class="font2L cor5">
+        <h1 class="font1XXL font1M cor0 fadeInLeft" data-anime="200">Bicicletas feitas sob medida<span
+            class="corp1">.</span></h1>
+        <p class="font2L cor5 fadeInLeft" data-anime="400">
           Bicicletas de alta precisão e qualidade, feitas sob medida para você. explore o mundo na sua velocidade com a
           Center Bike.
         </p>
-        <a class="button" href="./bikes.html">Selecione a sua</a>
+        <a class="button fadeInLeft" href="./bikes.html" data-anime="600">Selecione a sua</a>
       </div>
-      <picture>
+      <picture data-anime="800" class="fadeInDown">
         <source media="(max-width: 800px)" srcset="./img/fotos/introducao1.gif">
         <img src="./img/fotos/introducao1.gif" width="480" height="270" alt="GIF bicicleta com varias cores">
       </picture>
@@ -327,8 +329,8 @@
     </div>
   </footer>
 
-
-
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
